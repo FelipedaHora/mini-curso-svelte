@@ -1,2 +1,8 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+    let contador  = 0;
+</script>
+
+<h1>{contador}</h1>
+<input type="text">
+<button on:click={()=> contador++}>Aumentar</button>
+<button on:click={()=> contador--}>Diminuir</button>
